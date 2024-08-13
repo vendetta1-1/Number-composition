@@ -18,6 +18,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
 rootProject.name = "Number composition"
 include(":app")

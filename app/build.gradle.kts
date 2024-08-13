@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kotlin.parcelable)
+    alias(libs.plugins.kapt)
+    alias(libs.plugins.navigation.safeargs)
 }
 
 android {
@@ -40,7 +42,8 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
