@@ -30,6 +30,9 @@
         <action
             android:id="@+id/action_gameFragment_to_gameFinishedFragment"
             app:destination="@id/gameFinishedFragment" />
+        <argument
+            android:name="level"
+            app:argType="com.vendetta.numbercomposition.domain.entity.Level" />
     </fragment>
     <fragment
         android:id="@+id/gameFinishedFragment"
@@ -40,5 +43,8 @@
             android:id="@+id/action_gameFinishedFragment_pop_including_gameFragment"
             app:popUpTo="@id/gameFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="gameResult"
+            app:argType="com.vendetta.numbercomposition.domain.entity.GameResult" />
     </fragment>
 </navigation>
