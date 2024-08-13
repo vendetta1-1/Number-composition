@@ -132,10 +132,6 @@ class GameFragment : Fragment() {
     }
 
     companion object {
-
-        const val NAME = "GameFragment"
         const val KEY_LEVEL = "level"
-
-
     }
 }

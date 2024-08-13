@@ -26,7 +26,11 @@
         android:id="@+id/gameFragment"
         android:name="com.vendetta.numbercomposition.presentation.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_gameFinishedFragment"
+            app:destination="@id/gameFinishedFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameFinishedFragment"
         android:name="com.vendetta.numbercomposition.presentation.GameFinishedFragment"
